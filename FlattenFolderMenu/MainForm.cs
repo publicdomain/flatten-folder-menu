@@ -37,6 +37,9 @@ namespace FlattenFolderMenu
             // Set associated icon from exe file
             this.AssociatedIcon = Icon.ExtractAssociatedIcon(typeof(MainForm).GetTypeInfo().Assembly.Location);
 
+            // Set public domain daily tool strip menu item image
+            this.dailyReleasesPublicDomainDailycomToolStripMenuItem.Image = this.AssociatedIcon.ToBitmap();
+
             // Update the program by flatten key
             this.UpdateByFlattenRegistryKey();
         }
