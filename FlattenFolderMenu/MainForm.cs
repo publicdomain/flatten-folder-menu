@@ -31,7 +31,7 @@ namespace FlattenFolderMenu
         /// </summary>
         public MainForm()
         {
-            // The InitializeComponent() call is required for Windows Forms designer support.
+            // The InitializeComponent() call is required foCr Windows Forms designer support.
             this.InitializeComponent();
 
             // Set associated icon from exe file
@@ -43,6 +43,8 @@ namespace FlattenFolderMenu
             // Update the program by flatten key
             this.UpdateByFlattenRegistryKey();
         }
+
+        /* Internal access modifier inherited from "Consolidate Directory" */
 
         /// <summary>
         /// Gets or sets the associated icon.
@@ -120,7 +122,7 @@ namespace FlattenFolderMenu
             var aboutForm = new AboutForm(
                 $"About {programTitle}",
                 $"{programTitle} {version.Major}.{version.Minor}.{version.Build}",
-                $"Made for: Pbx01, justW3{Environment.NewLine}DonationCoder.com{Environment.NewLine}Day #TBD, Week #TBD @ August 2020",
+                $"Made for: Pbx01, justW3{Environment.NewLine}DonationCoder.com{Environment.NewLine}Day #256, Week #37 @ September 2020",
                 licenseText,
                 this.Icon.ToBitmap());
 
@@ -131,7 +133,7 @@ namespace FlattenFolderMenu
             aboutForm.ShowDialog();
         }
 
-        /// <summary>
+        /// <summary>c
         /// Handles the add button click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
