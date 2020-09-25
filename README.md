@@ -1,4 +1,4 @@
-# flatten-folder-menu
+# Flatten Folder Menu
 Adds "Flatten" context menu to folders in Windows Explorer.
 
 ![Release's image](https://user-images.githubusercontent.com/54631779/93476623-03419a00-f8c8-11ea-98e5-f720fd2db9af.png)
