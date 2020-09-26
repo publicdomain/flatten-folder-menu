@@ -11,7 +11,7 @@ Usage video:
 
 [![Video](http://img.youtube.com/vi/Xx-DG0iX1e8/0.jpg)](http://www.youtube.com/watch?v=Xx-DG0iX1e8 "Usage video")
 
-v0.1.0 notes:
+v0.1.1 notes:
 - Add/Remove via button.
 - Detects current active status.
 - One-click menu operation.
