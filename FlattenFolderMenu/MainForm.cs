@@ -122,7 +122,7 @@ namespace FlattenFolderMenu
             var aboutForm = new AboutForm(
                 $"About {programTitle}",
                 $"{programTitle} {version.Major}.{version.Minor}.{version.Build}",
-                $"Made for: Pbx01, justW3{Environment.NewLine}DonationCoder.com{Environment.NewLine}Day #256, Week #37 @ September 2020",
+                $"Made for: Pbx01, justW3{Environment.NewLine}DonationCoder.com{Environment.NewLine}Day #270, Week #39 @ September 26, 2020",
                 licenseText,
                 this.Icon.ToBitmap());
 
