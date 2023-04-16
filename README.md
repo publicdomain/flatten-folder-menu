@@ -12,7 +12,7 @@ Usage video:
 
 [![Video](http://img.youtube.com/vi/Xx-DG0iX1e8/0.jpg)](http://www.youtube.com/watch?v=Xx-DG0iX1e8 "Usage video")
 
-Source code: [TallyLines @ GitHub](https://github.com/publicdomain/tally-lines)
+Source code: [Flatten folder menu @ GitHub](https://github.com/publicdomain/flatten-folder-menu )
 
 Targets Microsoft .NET framework v4.5
 
