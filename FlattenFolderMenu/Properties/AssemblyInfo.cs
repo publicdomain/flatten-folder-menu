@@ -18,7 +18,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Flatten Folder Menu")]
 [assembly: AssemblyDescription("Adds \"Flatten\" context menu to folders in Windows Explorer.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("PublicDomain.com")]
+[assembly: AssemblyCompany("PublicDomain.is")]
 [assembly: AssemblyProduct("FlattenFolderMenu")]
 [assembly: AssemblyCopyright("Copyright 2023 - Victor L. Senior")]
 [assembly: AssemblyTrademark("publicdomain")]

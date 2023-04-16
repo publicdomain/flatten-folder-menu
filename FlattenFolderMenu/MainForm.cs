@@ -37,8 +37,8 @@ namespace FlattenFolderMenu
             // Set associated icon from exe file
             this.AssociatedIcon = Icon.ExtractAssociatedIcon(typeof(MainForm).GetTypeInfo().Assembly.Location);
 
-            // Set public domain daily tool strip menu item image
-            this.dailyReleasesPublicDomainDailycomToolStripMenuItem.Image = this.AssociatedIcon.ToBitmap();
+            // Set PublicDomain.is tool strip menu item image
+            this.freeReleasesPublicDomainIsToolStripMenuItem.Image = this.AssociatedIcon.ToBitmap();
 
             // Update the program by flatten key
             this.UpdateByFlattenRegistryKey();
@@ -53,14 +53,14 @@ namespace FlattenFolderMenu
         internal Icon AssociatedIcon { get; set; }
 
         /// <summary>
-        /// Handles the daily releases public domain dailycom tool strip menu item click event.
+        /// Handles the free releases PublicDomain.is tool strip menu item click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
-        internal void OnDailyReleasesPublicDomainDailycomToolStripMenuItemClick(object sender, EventArgs e)
+        internal void OnFreeReleasesPublicDomainIsToolStripMenuItemClick(object sender, EventArgs e)
         {
             // Open current website
-            Process.Start("https://publicdomaindaily.com");
+            Process.Start("https://publicdomain.is");
         }
 
         /// <summary>
