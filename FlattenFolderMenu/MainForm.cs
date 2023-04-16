@@ -82,7 +82,7 @@ namespace FlattenFolderMenu
         internal void OnSourceCodeGithubcomToolStripMenuItemClick(object sender, EventArgs e)
         {
             // Open GitHub
-            Process.Start("https://github.com/publicdomain");
+            Process.Start("https://github.com/publicdomain/flatten-folder-menu");
         }
 
         /// <summary>
