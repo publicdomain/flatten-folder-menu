@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("PublicDomain.com")]
 [assembly: AssemblyProduct("FlattenFolderMenu")]
-[assembly: AssemblyCopyright("Copyright 2020 - Victor L. Senior")]
+[assembly: AssemblyCopyright("Copyright 2023 - Victor L. Senior")]
 [assembly: AssemblyTrademark("publicdomain")]
 [assembly: AssemblyCulture("")]
 
@@ -34,4 +34,4 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can use the default the Revision and 
 // Build Numbers by using the '*' as shown below:
-[assembly: AssemblyVersion("0.1.1.*")]
+[assembly: AssemblyVersion("0.2.0.*")]

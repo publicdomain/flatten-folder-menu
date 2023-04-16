@@ -10,7 +10,7 @@ namespace FlattenFolderMenu
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Drawing;
-    using System.IO;
+    using Alphaleonis.Win32.Filesystem;
     using System.Reflection;
     using System.Windows.Forms;
     using Microsoft.Win32;
@@ -96,6 +96,8 @@ namespace FlattenFolderMenu
             var licenseText = $"CC0 1.0 Universal (CC0 1.0) - Public Domain Dedication{Environment.NewLine}" +
                 $"https://creativecommons.org/publicdomain/zero/1.0/legalcode{Environment.NewLine}{Environment.NewLine}" +
                 $"Libraries and icons have separate licenses.{Environment.NewLine}{Environment.NewLine}" +
+                $"AlphaFS library by Alphaleonis - MIT License{Environment.NewLine}" +
+                $"https://github.com/alphaleonis/AlphaFS/{Environment.NewLine}{Environment.NewLine}" +
                 $"Upload folder icon by Memed_Nurrohmad - Pixabay License{Environment.NewLine}" +
                 $"https://pixabay.com/illustrations/upload-folder-icon-technology-2013228/{Environment.NewLine}{Environment.NewLine}" +
                 $"Patreon icon used according to published brand guidelines{Environment.NewLine}" +
@@ -112,22 +114,27 @@ namespace FlattenFolderMenu
                 $"Letter D by ArtsyBee - Pixabay License{Environment.NewLine}" +
                 $"https://pixabay.com/illustrations/d-glamour-gold-lights-2790573/{Environment.NewLine}{Environment.NewLine}";
 
+            // Prepend sponsors
+            licenseText = $"RELEASE SUPPORTERS:{Environment.NewLine}{Environment.NewLine}* Jesse Reichler (mouser){Environment.NewLine}* Max P.{Environment.NewLine}* Kathryn S.{Environment.NewLine}* Cranioscopical{Environment.NewLine}* tomos{Environment.NewLine}* luvnbeast{Environment.NewLine}* nkormanik{Environment.NewLine}{Environment.NewLine}=========={Environment.NewLine}{Environment.NewLine}" + licenseText;
+
             // Set title
             string programTitle = typeof(MainForm).GetTypeInfo().Assembly.GetCustomAttribute<AssemblyTitleAttribute>().Title;
 
-            // Set version for generating semantic version 
+            // Set version for generating semantic version
             Version version = typeof(MainForm).GetTypeInfo().Assembly.GetName().Version;
 
             // Set about form
             var aboutForm = new AboutForm(
                 $"About {programTitle}",
                 $"{programTitle} {version.Major}.{version.Minor}.{version.Build}",
-                $"Made for: Pbx01, justW3{Environment.NewLine}DonationCoder.com{Environment.NewLine}Day #270, Week #39 @ September 26, 2020",
+                $"Made for: nkormanik, Pbx01, justW3{Environment.NewLine}DonationCoder.com{Environment.NewLine}Day #106, Week #15 @ April 16, 2023",
                 licenseText,
-                this.Icon.ToBitmap());
+                this.Icon.ToBitmap())
+            {
 
-            // Set about form icon
-            aboutForm.Icon = this.AssociatedIcon;
+                // Set about form icon
+                Icon = this.AssociatedIcon
+            };
 
             // Show about form
             aboutForm.ShowDialog();
@@ -155,7 +162,7 @@ namespace FlattenFolderMenu
                 if (!File.Exists(this.iconFileName))
                 {
                     // Use file stream
-                    using (FileStream fileStream = File.Create(this.iconFileName))
+                    using (System.IO.FileStream fileStream = File.Create(this.iconFileName))
                     {
                         // Save main form icon to file
                         this.Icon.Save(fileStream);
