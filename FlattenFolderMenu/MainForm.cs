@@ -71,7 +71,7 @@ namespace FlattenFolderMenu
         internal void OnOriginalThreadDonationCodercomToolStripMenuItemClick(object sender, EventArgs e)
         {
             // Open original thread @ DonationCoder
-            Process.Start("https://www.donationcoder.com/forum/index.php?topic=46630.0");
+            Process.Start("https://www.donationcoder.com/forum/index.php?topic=50503.0");
         }
 
         /// <summary>
